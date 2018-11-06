@@ -2,6 +2,7 @@ package com.ktnw.mapper;
 
 import com.ktnw.entity.User;
 import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.SelectProvider;
 
 public interface UserMapper {
 
