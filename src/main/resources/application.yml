@@ -1,0 +1,19 @@
+#####################################################################################################
+#注册中心
+spring:
+    application:
+        name: service
+server:
+  port: 8080
+eureka:
+ # instance:
+ #  preferIpAddress: true
+  #  instance-id: ${spring.cloud.client.ipAddress}:${service.port}
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+#####################################################################################################
+#规定上传文件大小
+spring.http.multipart.maxFileSize: 30Mb
+spring.http.multipart.maxRequestSize: 30Mb
+#####################################################################################################
